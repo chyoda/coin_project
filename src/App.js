@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css'
 import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

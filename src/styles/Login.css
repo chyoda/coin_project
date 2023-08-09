@@ -1,0 +1,8 @@
+.form_box {
+    margin: 0 auto;
+    width: 500px;
+    background-color: var(--gray-500);
+    transform: translateY(50%);
+    border-radius: 20px;
+    padding: 40px;
+}
