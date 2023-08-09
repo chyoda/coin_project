@@ -2,11 +2,12 @@ import logo from './logo.svg';
 import './styles/App.css'
 import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HomeEmp from './pages/HomeEmp';
 
 function App() {
   return (
     <div className="App">
-      <Login/>
+      <HomeEmp/>
     </div>
   );
 }
