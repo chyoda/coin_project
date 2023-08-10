@@ -5,7 +5,13 @@ const AddCred = () => {
     return (
         <>
             <NavBarCOM/>
-            <h1>AddCred</h1>
+            <br/>
+            <div className="box">
+                <br/>
+                <h2>Adicionar Crédito</h2>
+                <br/>
+                
+            </div>
         </>
     )
 }
