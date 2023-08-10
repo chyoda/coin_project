@@ -1,9 +1,17 @@
 import React from "react";
+import NavBarCOM from "./componentsCOM/NavBarCOM";
 
 const AddCred = () => {
     return (
         <>
-            <h1>AddCred</h1>
+            <NavBarCOM/>
+            <br/>
+            <div className="box">
+                <br/>
+                <h2>Adicionar Crédito</h2>
+                <br/>
+                
+            </div>
         </>
     )
 }

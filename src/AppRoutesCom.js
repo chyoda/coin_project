@@ -16,7 +16,7 @@ const AppRoutesCom = () => {
             <Route path="/AdicionarEmpresa" element={<AddEmp />} />
             <Route path="/CadastrarProdutos" element={<CadProd />} />
             <Route path="/LerQRCode" element={<LerQrCode />} />
-            <Route path="/MonitorarEmpresa" element={<MonEmp />} />
+            <Route path="/MonitorarEmpresas" element={<MonEmp />} />
             <Route path="/GerarQrCode" element={<QrCode />} />
         </Routes>
     );

@@ -1,3 +1,4 @@
+import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; // Certifique-se de definir o caminho correto
