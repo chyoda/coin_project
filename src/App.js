@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; // Certifique-se de definir o caminho correto
 import AppRoutesCom from './AppRoutesCom';
+import Vender_Read_QRCODE from './pages/EMP/Vender_Read_QRCODE';
 
 function App() {
   return (
@@ -13,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default Vender_Read_QRCODE;
