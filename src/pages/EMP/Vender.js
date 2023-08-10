@@ -11,7 +11,7 @@ const Vender = () => {
     return (
         <>
             <EmptyNavBar/>
-            <div className="ComBox">
+            <div class="ComBox">
                 <h1>Realizar Venda</h1>
             </div>
 
@@ -27,35 +27,56 @@ const Vender = () => {
             </div>
 
             <div class="tet">
-            <br />
-            <br />
-            <br />
-            <Form.Control type="text" placeholder="Nome do produto" /> 
-            <br />
-            <Form.Control class="comboinput" type="text" placeholder="Nome do produto" />
-            <br />
-            <Form.Control class="comboinput" type="text" placeholder="Nome do produto" />
-            <br />
-            <Form.Control class="comboinput" type="text" placeholder="Nome do produto" />
-            <br />
-            <Form.Control type="number" placeholder="R$1,00" />
-            <br />
-            <Form.Control type="number" placeholder="R$1,00" />
-            <br />
-            <Form.Control type="number" placeholder="R$1,00" />
-            <br />
-            <Form.Control type="number" placeholder="R$1,00" />
+                <Form.Control type="text" placeholder="Nome do produto" /> 
+                <Form.Control type="number" placeholder="1,00 R$" />
+                <ButtonGroup aria-label="Basic example">
+                    <Button variant="secondary"> - </Button>
+                    <Form.Control type="number" placeholder="0" />
+                    <Button variant="secondary"> + </Button>
+                </ButtonGroup>
+            </div>
+            
+            <div class="tet">
+                <Form.Control type="text" placeholder="Nome do produto" /> 
+                <Form.Control type="number" placeholder="1,00 R$" />
+                <ButtonGroup aria-label="Basic example">
+                    <Button variant="secondary"> - </Button>
+                    <Form.Control type="number" placeholder="0" />
+                    <Button variant="secondary"> + </Button>
+                </ButtonGroup>
             </div>
 
-            <div>
-
-            <ButtonGroup aria-label="Basic example">
-                <Button variant="secondary">Left</Button>
-                <Button variant="secondary">Middle</Button>
-                <Button variant="secondary">Right</Button>
-            </ButtonGroup>
-
+            <div class="tet">
+                <Form.Control type="text" placeholder="Nome do produto" /> 
+                <Form.Control type="number" placeholder="1,00 R$" />
+                <ButtonGroup aria-label="Basic example">
+                    <Button variant="secondary"> - </Button>
+                    <Form.Control type="number" placeholder="0" />
+                    <Button variant="secondary"> + </Button>
+                </ButtonGroup>
             </div>
+
+            <div class="tet">
+                <Form.Control type="text" placeholder="Nome do produto" /> 
+                <Form.Control type="number" placeholder="1,00 R$" />
+                <ButtonGroup aria-label="Basic example">
+                    <Button variant="secondary"> - </Button>
+                    <Form.Control type="number" placeholder="0" />
+                        <Button variant="secondary"> + </Button>
+                </ButtonGroup>
+            </div>
+
+            <div className="bottom">
+                <div class="valorT">
+                    <h5>Valor total:</h5>
+                    <h5>R$ 0,00</h5>
+                </div>
+                <Button variant="warning">Prosseguir</Button>{' '}
+            </div>
+
+            <div className="war"> 
+            </div>
+
         </>
     )
 }

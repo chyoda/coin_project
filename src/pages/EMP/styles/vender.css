@@ -1,14 +1,41 @@
+.ComBox{
+    margin-top:5%;
+    text-align: center;
+}
+
 .mb-3{
     width: 250px;
     height: 15px;
     left: 1050px;
 }
 
-.comboinput{
-    background-color: red;
+.tet{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    width: 1200px;
+    margin: 2.5rem auto;
 }
 
-.tet{
-    width: 600px;
-    margin: auto;
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.valorT{
+    display: flex;
+    gap:1.5rem;
+}
+
+.valorT>h5{
+    background-color: gray;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.war{
+    margin-top: 50px;
+    width: 50px;
+    height: 15px;
+    margin-left: 86.5%;
 }
