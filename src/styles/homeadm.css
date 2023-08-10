@@ -1,29 +1,35 @@
-.text{
-    text-align: center;
-    margin-top: .5rem;
-}
-.text::after{
-    content: "";
-    display: block;
-    background-color: black;
-    width: 25rem;
-    padding: 1px;
-    margin: auto;
-    border-radius: 2px;
-}
+@charset "UTF-8";
 
-.button{
-    text-align: center;
-    margin-top: 155px;
-    font-size: 53px;
-    border-radius: 5px;
-
+.title{
+  margin-top: 2%;
+  text-align: center;
+}
+.title::after{
+  content: "";
+  display: block;
+  margin:auto;
+  width: 25rem;
+  height: 2.5px;
+  border-radius: 5px;
+  background-color: black;
 }
 
-.button1{
-    text-align: center;
-    margin-top: 50px;
-    font-size: 50px;
-    border-radius: 5px;
+.container{
+  display: grid;
+}
 
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.membro-cadastrado{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
+  height: 25rem;
+  overflow: auto;
+  padding: 1rem;
 }
