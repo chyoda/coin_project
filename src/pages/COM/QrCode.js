@@ -1,13 +1,13 @@
 import React from "react";
 import NavBarCOM from "./componentsCOM/NavBarCOM";
 
-const AddEmp = () => {
+const QrCode = () => {
     return (
-        <>
+        <> 
             <NavBarCOM/>
-            <h1>AddEmp</h1>
+            <h1>QrCode</h1>
         </>
     )
 }
 
-export default AddEmp
+export default QrCode

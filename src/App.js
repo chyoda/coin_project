@@ -1,14 +1,16 @@
-import React from 'react';
-import HomeADM from './pages/ADM/homeadm';
+import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom'; // Certifique-se de definir o caminho correto
+import AppRoutesCom from './AppRoutesCom';
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <HomeADM />
+    <BrowserRouter>
+      <div className='App'>
+        <AppRoutesCom/>
       </div>
-    </>
+    </BrowserRouter>
   );
 }
 

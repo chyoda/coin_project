@@ -1,13 +1,13 @@
 import React from "react";
 import NavBarCOM from "./componentsCOM/NavBarCOM";
 
-const AddEmp = () => {
+const CadProd = () => {
     return (
         <>
             <NavBarCOM/>
-            <h1>AddEmp</h1>
+            <h1>CadProd</h1>
         </>
     )
 }
 
-export default AddEmp
+export default CadProd
