@@ -73,10 +73,6 @@ const Vender = () => {
                 </div>
                 <Button variant="warning">Prosseguir</Button>{' '}
             </div>
-
-            <div className="war"> 
-            </div>
-
         </>
     )
 }
