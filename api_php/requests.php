@@ -1,6 +1,7 @@
 <?php
 
-    include_once 'conector.php';
+    require_once __DIR__.'..\library\conector.php';
+    require_once __DIR__.'..\library\verificador.php';
 
     function listarUser(){
         global $conexao;
@@ -92,4 +93,4 @@
         }
     }
     
-    listarPaybox();
+    listarUser();

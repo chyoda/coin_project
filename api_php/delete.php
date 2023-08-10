@@ -1,35 +1,37 @@
 <?php
 
 
-    require_once 'conector.php';
+require_once __DIR__.'..\library\conector.php';
+require_once __DIR__.'..\library\verificador.php';
 
-    function deletarDado($tipo,$idAlvo)
-    {
-        global $conexao;
-        echo $idAlvo;
-        echo "Função executada";
-        mysqli_query($conexao, "DELETE FROM `user` WHERE 'id' = $idAlvo");
+function deletarDado($tabelaOrigem, $idAlvo)
+{
+    global $conexao;
+
+    if (verificarExistencia($tabelaOrigem, $idAlvo) == 1) {
+        mysqli_query($conexao, "DELETE FROM `$tabelaOrigem` WHERE `id` = $idAlvo");
+        header('HTTP/1.1 200 OK');
+    } else {
+        header('HTTP/1.1 404 NOT FOUND');
+        echo "Não foi encontrado nenhum usuário na tabela: $tabelaOrigem e id: $idAlvo.";
     }
 
-    if (true) {
-        $idAlvo = 12;
-        global $conexao;
-
-        $escapedLogin = mysqli_real_escape_string($conexao, $idAlvo);
-        $id_existe = mysqli_query($conexao, "SELECT `id` FROM `user` WHERE `id` = $escapedLogin");
-        var_dump($id_existe->num_rows);
-
-        if ($id_existe->num_rows >= 1) {
-            mysqli_query($conexao, "DELETE FROM `user` WHERE 'id' = 12");
-
-        } elseif ($id_existe->num_rows == 0) {
-            echo "Login disponível para cadastro.";
-        }
+    if (verificarExistencia($tabelaOrigem, $idAlvo) == 1) {
+        header('HTTP/1.1 200 OK');
+        echo "Deletado com sucesso";
+    } else {
+        header('HTTP/1.1 404 NOT FOUND');
     }
-    else
-    {
-        header('HTTP/1.1 405 Method Not Allowed');
-        exit();
-    }
+}
 
+if (true) 
+{
+    //$id = $_POST['id'];
+    //$tabelaOrigem = $_POST['tabela'];
+    global $conexao;
 
+    $idAlvo = 141;
+    $tabelaOrigem = "user";
+
+    deletarDado($tabelaOrigem, $idAlvo);
+} 

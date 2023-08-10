@@ -27,6 +27,6 @@
     }
     else
     {
-        // mysqli_query($conexao, 'INSERT INTO (`name`, `occupation`, `login`, `password`, `observation`, )')
+        mysqli_query($conexao, 'INSERT INTO (`name`, `occupation`, `login`, `password`, `observation`, )')
     }
     
