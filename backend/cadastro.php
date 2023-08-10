@@ -1,7 +1,7 @@
 <?php
 
-    require_once __DIR__.'..\library\conector.php';
-    require_once __DIR__.'..\library\verificador.php';
+    require_once '..\library\conector.php';
+    require_once '..\library\verificador.php';
 
     $name = $_POST['name'];
     $login = $_POST['login'];
@@ -13,12 +13,7 @@
 
     global $conexao;
 
-    
-    function buscarIdEmpresa($nomeEmpresa)
-    {
-        global $empresa;
-        verificarExistenciaEmpresa($empresa);
-    }
+    $idEmpresa = capturarIdEmpresa($nomeEmpresa);
     
     if (verificarExistencia($tabelaOrigem, $login) == 1)
     {
@@ -27,6 +22,8 @@
     }
     else
     {
-        mysqli_query($conexao, 'INSERT INTO (`name`, `occupation`, `login`, `password`, `observation`, )')
+        mysqli_query($conexao, "INSERT INTO (`name`, `occupation`, `login`, `password`, `observation`, `FK_user_enterprise`) 
+        VALUES ('$name', '$occupation', '$login', '$pass', '$observation', '$idEmpresa')");
+
     }
     

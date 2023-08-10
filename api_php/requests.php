@@ -1,7 +1,7 @@
 <?php
 
-    require_once __DIR__.'..\library\conector.php';
-    require_once __DIR__.'..\library\verificador.php';
+    require_once '..\library\conector.php';
+    require_once '..\library\verificador.php';
 
     function listarUser(){
         global $conexao;
