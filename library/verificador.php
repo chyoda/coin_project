@@ -23,6 +23,7 @@ function capturarIdEmpresa($nomeEmpresa)
 
     if (verificarExistenciaEmpresa($nomeEmpresa) == 1)
     {
+        //
     }
     else
     {
@@ -43,7 +44,7 @@ function verificarExistenciaEmpresa($nomeEmpresa)
 {
     global $conexao;
 
-    $quantiEmpresa = mysqli_query($conexao, "SELECT * FROM `enterprise` WHERE `name` = $nomeEmpresa");
+    $quantiEmpresa = mysqli_query($conexao, "SELECT * FROM `enterprise` WHERE `name` = '$nomeEmpresa'");
     if ($quantiEmpresa->num_rows == 1) {
         return 1;
     } else {
@@ -66,4 +67,18 @@ function Autenticador($tabelaOrigem, $login)
         return 0;
     }
 }
+function AutenticadorCadastro($cadastro)
+{
+    global $conexao;
 
+    $escapedCadastro = mysqli_real_escape_string($conexao, $cadastro);
+    $quantidade = mysqli_query($conexao, "SELECT `login` FROM `user` WHERE `name` = `$escapedCadastro`");
+
+    if ($quantidade->num_rows > 0) {
+        return 1;
+    } else {
+        header('HTTP/1.1 404 NOT FOUND');  
+        return 0;
+    }
+    
+}
