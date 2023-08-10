@@ -1,11 +1,11 @@
 import React from "react";
 
-const MonEmp = () => {
+const QrCode = () => {
     return (
         <>
-            <h1>MonEmp</h1>
+            <h1>QrCode</h1>
         </>
     )
 }
 
-export default MonEmp
+export default QrCode

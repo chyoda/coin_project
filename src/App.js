@@ -1,11 +1,15 @@
-import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom'; // Certifique-se de definir o caminho correto
+import AppRoutesCom from './AppRoutesCom';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <BrowserRouter>
+      <div className='App'>
+        <AppRoutesCom/>
+      </div>
+    </BrowserRouter>
   );
 }
 
