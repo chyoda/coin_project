@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.box{
+  margin: 5rem auto;
+  background-color: #1791b0;
+  padding: 1rem;
+  border-radius: 3px;
+  width: 35rem;
+}
+.center{
+  display: grid;
+  place-items: center;
+}
