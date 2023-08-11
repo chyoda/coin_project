@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EmptyNavBar from "../../components/EmptyNavBar";
 import Button from 'react-bootstrap/Button';
-import './stylesCOM/HomeCom.css';
+import './StyleCOM.css'
 
 const HomeCom = () => {
     return (
@@ -19,14 +19,14 @@ const HomeCom = () => {
                 <Link to="/AdicionarCredito">
                     <Button variant="primary">Adicionar Crédito</Button>
                 </Link>{' '}
-                <Link to="/MonitorarEmpresas">
-                    <Button variant="primary">Monitorar Empresas</Button>
-                </Link>{' '}
                 <Link to="/AdicionarEmpresa">
                     <Button variant="primary">Adicionar Empresa</Button>
                 </Link>{' '}
                 <Link to="/CadastrarProdutos">
                     <Button variant="primary">Adicionar Produto</Button>
+                </Link>{' '}
+                <Link to="/MonitorarEmpresas">
+                    <Button variant="primary">Monitorar Empresas</Button>
                 </Link>{' '}
             </div>
         </>
