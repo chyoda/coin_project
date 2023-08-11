@@ -6,7 +6,7 @@ import '../StyleCOM.css'
 const EmpCard = () => {
     return (
         <>
-            <button className="cardBox">
+            <div className="cardBox">
                 <img
                     alt=""
                     src={appLogo}
@@ -26,7 +26,7 @@ const EmpCard = () => {
                     disabled
                     readOnly
                 />
-            </button>
+            </div>
         </>
     )
 }
