@@ -1,0 +1,13 @@
+.boxCred {
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    background-color: #a0aec0;
+}
+
+.ComBox {
+    text-align: center;
+    padding: 20px;
+}
