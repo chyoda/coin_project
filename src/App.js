@@ -1,18 +1,18 @@
-import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom'; // Certifique-se de definir o caminho correto
+import { BrowserRouter } from 'react-router-dom'; 
 import AppRoutesCom from './AppRoutesCom';
-import EnvComp from './pages/EMP/EnvComp'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <BrowserRouter>
       <div className='App'>
         <AppRoutesCom/>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
 }
 
-export default EnvComp;
+export default App;
