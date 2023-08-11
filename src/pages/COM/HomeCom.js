@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EmptyNavBar from "../../components/EmptyNavBar";
 import Button from 'react-bootstrap/Button';
-import './stylesCOM/HomeCom.css';
+import './StyleCOM.css'
 
 const HomeCom = () => {
     return (
