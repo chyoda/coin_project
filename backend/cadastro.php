@@ -1,37 +1,37 @@
 <?php
 
-    require_once '..\library\conector.php';
-    require_once '..\library\verificador.php';
+require_once '..\library\conector.php';
+require_once '..\api_php\verificador.php';
 
-    // $name = $_POST['name'];
-    // $cadastro = $_POST['login'];
-    // $pass = $_POST['password'];
-    // $occupation = $_POST['occupation'];
-    // $observation = $_POST['observation'];
-    // $empresa = $_POST['enterprise'];
+// $name = $_POST['name'];
+// $cadastro = $_POST['login'];
+// $pass = $_POST['password'];
+// $occupation = $_POST['occupation'];
+// $observation = $_POST['observation'];
+// $empresa = $_POST['enterprise'];
 
-    $name = "Jorge Augusto";
-    $cadastro = "Pedrinh";
-    $pass = "12345";
-    $occupation = "worker";
-    $observation = "Nenhuma";
-    $nomeEmpresa = "ABC Inc.";
+$name = "Jhon";
+$cadastro = "Picona";
+$pass = "654321";
+$occupation = "adm";
+$observation = "Aleijado";
+$nomeEmpresa = "Sapien Gravida LLC";
 
-    global $conexao;
+global $conexao;
 
-    $idEmpresa = capturarIdEmpresa($nomeEmpresa);
+$idEmpresa = capturarIdEmpresa($nomeEmpresa);
 
-    $tabelaOrigem = "user";
+if (AutenticadorCadastro($cadastro) == 1) {
 
-    if (AutenticadorCadastro($cadastro) == 1)
-    {
-        header('HTTP/1.1 401 Unauthorized');
-        echo "O login: $login que foi solicitado para ser cadastrado na tabela: $tabelaOrigem já existe.";
-    }
-    else
-    {
-        mysqli_query($conexao, "INSERT INTO (`name`, `occupation`, `login`, `password`, `observation`, `FK_user_enterprise`) 
-        VALUES ('$name', '$occupation', '$login', '$pass', '$observation', '$idEmpresa')");
+   $result =  mysqli_query($conexao, "INSERT INTO `user` (`name`, `occupation`, `login`, `password`, `observation`, `FK_user_enterprise`) 
+   VALUES ('$name', '$occupation', '$cadastro', '$pass', '$observation', '$idEmpresa');");
+    header('HTTP/1.1 201 Created');
+    echo "Usuário cadastrado com sucesso.";
+    exit();
 
-    }
-    
+} else {
+    header('HTTP/1.1 401 Unauthorized');
+    echo "O login: $cadastro que foi solicitado a ser cadastrado já existe.";
+    exit();
+
+}

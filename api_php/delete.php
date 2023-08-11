@@ -24,8 +24,7 @@ function deletarDado($tabelaOrigem, $idAlvo)
     }
 }
 
-if (true) 
-{
+if (true) {
     //$id = $_POST['id'];
     //$tabelaOrigem = $_POST['tabela'];
     global $conexao;
@@ -34,4 +33,4 @@ if (true)
     $tabelaOrigem = "user";
 
     deletarDado($tabelaOrigem, $idAlvo);
-} 
+}

@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Receber os dados da requisição
     $requestData = file_get_contents('php://input');
     $data = json_decode($requestData);
-    
+
     if ($data) {
         // Processar e manipular os dados recebidos
         // Aqui você pode realizar as operações desejadas com os dados

@@ -15,7 +15,7 @@ function verificarExistencia($tabelaOrigem, $idAlvo)
     if ($quantidade->num_rows >= 0) {
         return 1;
     } else {
-        header('HTTP/1.1 404 NOT FOUND');  
+        header('HTTP/1.1 404 NOT FOUND');
         return 0;
     }
 }
@@ -29,7 +29,7 @@ function verificarExistenciaEmpresa($nomeEmpresa)
     if ($quantiEmpresa->num_rows == 1) {
         return 1;
     } else {
-        header('HTTP/1.1 404 NOT FOUND');  
+        header('HTTP/1.1 404 NOT FOUND');
         return 0;
     }
 }
@@ -39,20 +39,16 @@ function capturarIdEmpresa($nomeEmpresa)
 {
     global $conexao;
 
-    if (verificarExistenciaEmpresa($nomeEmpresa) == 1)
-    {
+    if (verificarExistenciaEmpresa($nomeEmpresa) == 1) {
         //
-    }
-    else
-    {
+    } else {
         HEADER('HTTP/1.1 400 BAD REQUEST');
         echo "Empresa não encontrada.";
         exit();
     }
 
     $quantidadeEmpresa = mysqli_query($conexao, "SELECT `id` FROM `enterprise` WHERE `name` = '$nomeEmpresa'");
-    if (mysqli_num_rows($quantidadeEmpresa) == 1) 
-    {
+    if (mysqli_num_rows($quantidadeEmpresa) == 1) {
         $row = mysqli_fetch_assoc($quantidadeEmpresa);
         $id = $row["id"];
         return $id;
@@ -70,7 +66,7 @@ function AutenticadorLogin($login)
     if ($quantidade->num_rows >= 0) {
         return 1;
     } else {
-        header('HTTP/1.1 400 BAD REQUEST');  
+        header('HTTP/1.1 400 BAD REQUEST');
         echo "O login não existe.";
         return 0;
     }
@@ -82,13 +78,12 @@ function AutenticadorCadastro($cadastro)
     global $conexao;
 
     $escapedCadastro = mysqli_real_escape_string($conexao, $cadastro);
-    $quantidade = mysqli_query($conexao, "SELECT `login` FROM `user` WHERE `name` = `$escapedCadastro`");
+    $quantidade = mysqli_query($conexao, "SELECT * FROM `user` WHERE `login` = '$escapedCadastro'");
 
-    if ($quantidade->num_rows == 0) {
+    if (mysqli_num_rows($quantidade) == 0) {
         return 1;
     } else {
-        header('HTTP/1.1 404 NOT FOUND');  
         return 0;
     }
-    
+
 }
