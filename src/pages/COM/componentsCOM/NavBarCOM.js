@@ -10,7 +10,7 @@ function NavBarCOM() {
         <>
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-            <Navbar.Brand as={Link} to="/">
+            <Navbar.Brand as={Link} to="/ComissaoDashboard">
             <img
                 alt=""
                 src={appLogo}
@@ -21,7 +21,7 @@ function NavBarCOM() {
             VTC Bank
             </Navbar.Brand>
             <Nav className="me-auto">
-                <Nav.Link as={Link} to="/">Home</Nav.Link>
+                <Nav.Link as={Link} to="/ComissaoDashboard">Home</Nav.Link>
                 <Nav.Link as={Link} to="/GerarQrCode">QR Code</Nav.Link>
                 <Nav.Link as={Link} to="/AdicionarCredito">Add Credito</Nav.Link>
                 <Nav.Link as={Link} to="/AdicionarEmpresa">Add Empresa</Nav.Link>

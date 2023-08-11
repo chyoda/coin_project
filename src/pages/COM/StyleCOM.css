@@ -11,3 +11,19 @@
     text-align: center;
     padding: 20px;
 }
+
+.cardBox {
+    height: 350px;
+    width: 300px;
+    background-color: #a0aec0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cardsAlign {
+    display: flex;
+    justify-content: center;
+}

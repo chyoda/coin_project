@@ -2,18 +2,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; 
 import AppRoutesCom from './AppRoutesCom';
-import Login from './pages/Login.js'
-import CadCliente from './pages/COM/CadCliente';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        {/* <AppRoutesCom/> */}
-        <Login/>
+        <AppRoutesCom/>
+        <Footer/>
       </div>
     </BrowserRouter>
   );
 }
 
-export default CadCliente;
+export default App;
