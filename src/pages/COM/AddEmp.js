@@ -8,6 +8,7 @@ const AddEmp = () => {
     return (
         <>
             <NavBarCOM/>
+            <br/>
             <Form className='boxCred'>
                 <Form.Group className="mb-3" controlId="formBasicText">
                     <Form.Label>Nome da empresa:*</Form.Label>
