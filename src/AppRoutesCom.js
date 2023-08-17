@@ -11,6 +11,7 @@ import QrCode from './pages/COM/QrCode';
 const AppRoutesCom = () => {
     return (
         <Routes>
+            <Route path="/" element={<HomeCom />} />
             <Route path="/ComissaoDashboard" element={<HomeCom />} />
             <Route path="/AdicionarCredito" element={<AddCred />} />
             <Route path="/AdicionarEmpresa" element={<AddEmp />} />
