@@ -30,29 +30,15 @@ const CadCliente = () => {
         <div>
             <EmptyNavBar />
             <CloseButton />
-            <h1 className='text'>Cadastrar Cliente</h1>
-            <div className='card'>
-                <label className='letra'>Nome:</label>
-                <input
-                    name="nome"
-                    placeholder="Digite o nome do cliente"
-                    className='input'
-                    onChange={handleChange}
-                    value={clienteData.nome}
-                />
-                <br />
-                <label className='letra'>Data de nascimento:</label>
-                <input
-                    name="dataNascimento"
-                    placeholder="Digite a data de nascimento do cliente"
-                    className='input'
-                    onChange={handleChange}
-                    value={clienteData.dataNascimento}
-                />
-                <br />
-                <button type="button" className="btn" onClick={handleSubmit}>
-                    Concluir
-                </button>
+            <h1 class='text'>Cadastrar Cliente</h1>
+            <div class='card'>
+                <label class='letra'>Nome:</label>
+                <input placeholder="Digite o nome do cliente" class='input'></input>
+                <br></br>
+                <label class='letra'>Data de nascimento:</label>
+                <input placeholder="Digite a data de nascimento do cliente" class='input'></input>
+                <br></br>
+                <button type="button" class="btn">Concluir</button>
             </div>
         </div>
     );
