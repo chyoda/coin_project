@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default AddEmp;
+export default App;

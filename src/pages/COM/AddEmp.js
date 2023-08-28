@@ -3,41 +3,13 @@ import NavBarCOM from "./componentsCOM/NavBarCOM";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';    
 import './StyleCOM.css';
-import $ from 'jquery';  // Importar a biblioteca jQuery
 
-
-const AddEmp = () => {
-    
-    const handleSubmit = (event) => {
-
-        console.log("O código foi executado até aqui.")
-        event.preventDefault(); // Impedir o envio padrão do formulário
-
-        const formData = {
-            nomeEmpresa: event.target.nomeEmpresa.value,
-            descricao: event.target.descricao.value,
-            saldo: event.target.saldo.value
-        };
-
-        $.ajax({
-            url: "/backend/cadastrarEmpresa.php", // Caminho relativo à raiz do projeto
-            method: "POST",
-            data: formData,
-            success: function (response) {
-                console.log("Sucesso:", response);
-                // Redirecionar ou atualizar a página, se necessário
-            },
-            error: function (error) {
-                console.error("Erro ao enviar dados:", error);
-            }
-        });
-    };
-
+const AddEmp = () => { 
     return (
         <>
             <NavBarCOM/>
             <br/>
-            <Form className='boxCred' onSubmit={handleSubmit}>
+            <Form className='boxCred'>
                 <Form.Group className="mb-3" controlId="formBasicText">
                     <Form.Label>Nome da empresa:*</Form.Label>
                     <Form.Control name='nomeEmpresa' type="text" maxLength={30} placeholder="Digite o nome da empresa." />
