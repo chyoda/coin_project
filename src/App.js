@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; 
 import AppRoutesCom from './AppRoutesCom';
 import Footer from './components/Footer'
+import CadCliente from './pages/COM/CadCliente'
 
 function App() {
   return (
@@ -15,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default CadCliente;
