@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import EmptyNavBar from "../../components/EmptyNavBar";
-import '../../styles/CadCliente.css'
+import '../../styles/CadCliente.css';
 import CloseButton from 'react-bootstrap/CloseButton';
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>;
 
 
-const CadCliente = () =>{
-    return(
+const CadCliente = () => {
+    return (
         <div>
             <EmptyNavBar />
             <CloseButton />
@@ -13,6 +14,7 @@ const CadCliente = () =>{
             <div class='card'>
                 <label class='letra'>Nome:</label>
                 <input placeholder="Digite o nome do cliente" class='input'></input>
+                <br></br>
                 <label class='letra'>Data de nascimento:</label>
                 <input placeholder="Digite a data de nascimento do cliente" class='input'></input>
                 <br></br>
@@ -22,10 +24,7 @@ const CadCliente = () =>{
                 </div>
             </div>
         </div>
-    )
-}
-
-
-
+    );
+};
 
 export default CadCliente;
