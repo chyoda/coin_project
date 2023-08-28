@@ -17,7 +17,7 @@ const CadCliente = () =>{
                 <input placeholder="Digite a data de nascimento do cliente" class='input'></input>
                 <br></br>
                 <button type="button" class="btn">Concluir</button>
-                <label className="readQR">Leia o QR Code para salvar o cliente.</label>
+                <label className="readQR">Leia o QR Code para salvar oo cliente.</label>
                 <div className="box">
                 </div>
             </div>
