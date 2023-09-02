@@ -2,13 +2,24 @@
 
 require_once '../library/conector.php';
 
-echo "aqui";
+header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $nomeEmpresa = $_POST["nomeEmpresa"];
-    $descricao = $_POST["descricao"];
-    $saldo = $_POST["saldo"];
+    $json_data = file_get_contents("php://input");
+    $data = json_decode($json_data);
+    
+    // Agora você pode acessar os valores usando as chaves do objeto $data
+    $nomeEmpresa = $data->nomeEmpresa;
+    $descricaoEmpresa = $data->descricaoEmpresa;
+    $saldoEmpresa = $data->saldoEmpresa;
 
-    mysqli_query($conexao, "INSERT INTO enterprise(`name`, `balance`, `description`) VALUES ('$nomeEmpresa', '$saldo', '$descricao')");
-    echo "A empresa foi inserida com sucesso.";
+    $adicionar_empresa = mysqli_query($conexao, "INSERT INTO enterprise(`name`, `balance`, `description`) VALUES ('$nomeEmpresa', '$saldoEmpresa', '$descricaoEmpresa')");
+
+    if ($adicionar_empresa) {
+        echo "A empresa foi inserida com sucesso.";
+    } else {
+        echo "Erro ao inserir a empresa: " . mysqli_error($conexao);
+    }
 }
