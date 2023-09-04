@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $adicionar_empresa = mysqli_query($conexao, "INSERT INTO enterprise(`name`, `balance`, `description`) VALUES ('$nomeEmpresa', '$saldoEmpresa', '$descricaoEmpresa')");
 
     if ($adicionar_empresa) {
-        echo "A empresa foi inserida com sucesso.";
+        header('HTTP/1.1 201 CREATED');
     } else {
         echo "Erro ao inserir a empresa: " . mysqli_error($conexao);
     }
