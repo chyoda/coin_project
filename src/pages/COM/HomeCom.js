@@ -13,7 +13,7 @@ const HomeCom = () => {
                 <h1>Comissão</h1>
                 <hr/>
                 <hr/>
-                <Link to="/GerarQrCode">
+                <Link to="/CadastrarQrCode">
                     <Button variant="primary">Cadastrar Cliente ao QR Code</Button>
                 </Link>{' '}
                 <Link to="/AdicionarCredito">

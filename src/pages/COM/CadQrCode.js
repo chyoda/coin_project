@@ -1,7 +1,7 @@
 import React from "react";
 import NavBarCOM from "./componentsCOM/NavBarCOM";
 
-const QrCode = () => {
+const CadQrCode = () => {
     return (
         <> 
             <NavBarCOM/>
@@ -10,4 +10,4 @@ const QrCode = () => {
     )
 }
 
-export default QrCode
+export default CadQrCode
