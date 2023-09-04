@@ -6,7 +6,7 @@ import AddEmp from "./pages/COM/AddEmp";
 import AddCred from "./pages/COM/AddCred";
 import CadProd from "./pages/COM/CadProd";
 import LerQrCode from "./pages/COM/LerQR";
-import QrCode from './pages/COM/QrCode';
+import CadQrCode from './pages/COM/CadQrCode';
 
 const AppRoutesCom = () => {
     return (
@@ -18,7 +18,7 @@ const AppRoutesCom = () => {
             <Route path="/CadastrarProdutos" element={<CadProd />} />
             <Route path="/LerQRCode" element={<LerQrCode />} />
             <Route path="/MonitorarEmpresas" element={<MonEmp />} />
-            <Route path="/GerarQrCode" element={<QrCode />} />
+            <Route path="/GerarQrCode" element={<CadQrCode />} />
         </Routes>
     );
 };
