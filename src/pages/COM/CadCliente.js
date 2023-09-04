@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import EmptyNavBar from "../../components/EmptyNavBar";
-import '../../styles/CadCliente.css'
+import '../../styles/CadCliente.css';
 import CloseButton from 'react-bootstrap/CloseButton';
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>;
 
 
-const CadCliente = () =>{
-    return(
+const CadCliente = () => {
+    return (
         <div>
             <EmptyNavBar />
             <CloseButton />
@@ -18,12 +19,12 @@ const CadCliente = () =>{
                 <input placeholder="Digite a data de nascimento do cliente" class='input'></input>
                 <br></br>
                 <button type="button" class="btn">Concluir</button>
+                <label className="readQR">Leia o QR Code para salvar o cliente.</label>
+                <div className="box">
+                </div>
             </div>
         </div>
-    )
-}
-
-
-
+    );
+};
 
 export default CadCliente;
