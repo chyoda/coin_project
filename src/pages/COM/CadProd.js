@@ -17,7 +17,7 @@ const CadProd = () => {
 
         console.log("Código HANDLE SUBMIT executado");
         try {
-            const response = await axios.post("http://localhost:8080/backend/cadastrarProduto.php", {
+            const response = await axios.post("http://localhost:8080/backend/COM/cadastrarProduto.php", {
                 nomeProduto: nomeProduto,
                 valorProduto: valorProduto,
                 nomeEmpresa: nomeEmpresa,
@@ -37,7 +37,7 @@ const CadProd = () => {
     };
 
     useEffect(() => {
-        axios.get('http://localhost:8080/backend/ListarEmpresaCadProduto.php')
+        axios.get('http://localhost:8080/backend/COM/ListarEmpresaCadProduto.php')
 
             .then(response => {
                 console.log('Resposta do servidor:', response.data);
