@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarCOM from "./componentsCOM/NavBarCOM";
+import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './StyleCOM.css'
@@ -28,9 +29,11 @@ const AddCred = () => {
                         <Form.Control type="password" placeholder="Digite a senha da comissão." />
                     </Form.Group>
                     <br/>
-                    <Button variant="primary" type="submit">
-                        Concluir
-                    </Button>
+                    <Link to="/LerQRCode">
+                        <Button variant="primary" type="submit">
+                            Concluir
+                        </Button>
+                    </Link>
                 </Form>
             </div>
         </>
