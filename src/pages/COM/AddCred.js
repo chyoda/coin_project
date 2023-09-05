@@ -11,14 +11,13 @@ const AddCred = () => {
             <NavBarCOM/>
             <br/>
             <div className="boxCred">
-                <br/>
                 <h2>Adicionar Crédito</h2>
-                <br/>
                 <Form>
                     <Form.Group className="mb-3">
-                        <Form.Label>Nome do cliente:*</Form.Label>
-                        <Form.Control placeholder="Disabled input" disabled />
+                    <input placeholder="Digite o ID do cliente." class='input'></input>
                     </Form.Group>
+                    <Button>Ou Leia o QR Code</Button>
+                    <div className="box"></div>
                     <br/>
                     <div>
                         <Form.Control type="email" placeholder="Ex: 20,00" />
@@ -30,8 +29,8 @@ const AddCred = () => {
                     </Form.Group>
                     <br/>
                     <Link to="/LerQRCode">
-                        <Button variant="primary" type="submit">
-                            Concluir
+                        <Button variant="primary" type="submit" class="btn">
+                            Prosseguir
                         </Button>
                     </Link>
                 </Form>

@@ -7,6 +7,22 @@
     background-color: #a0aec0;
 }
 
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-top: 3vh;
+    margin-left: 25vh;
+}
+
+.input{
+    width: 300px;
+    height: 43px;
+    margin-top: 5px;
+    align-items: center;
+    border-radius: 4px;
+}
+
 .ComBox {
     text-align: center;
     padding: 20px;
