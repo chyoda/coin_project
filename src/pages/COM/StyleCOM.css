@@ -24,12 +24,6 @@
     border: 1px;
     border-radius: 4px;
 }
-.letra{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    color: black;
-    margin-top: 30px;
-}
 
 .ComBox {
     padding: 20px;
@@ -48,9 +42,4 @@
 .cardsAlign {
     display: flex;
     justify-content: center;
-}
-
-.btn{
-    margin-top: 3vh;
-    margin-left: 5%;
 }
