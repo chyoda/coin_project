@@ -17,16 +17,7 @@ const AddCred = () => {
                     <input placeholder="Digite o ID do cliente." class='input'></input>
                     </Form.Group>
                     <Button>Ou Leia o QR Code</Button>
-                    <div className="box"></div>
-                    <br/>
-                    <div>
-                        <Form.Control type="email" placeholder="Ex: 20,00" />
-                    </div>
-                    <br/>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Senha:*</Form.Label>
-                        <Form.Control type="password" placeholder="Digite a senha da comissão." />
-                    </Form.Group>
+                    <div className="box"></div>                    
                     <br/>
                     <Link to="/LerQRCode">
                         <Button variant="primary" type="submit" class="btn">

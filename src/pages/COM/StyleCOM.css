@@ -3,10 +3,12 @@
     margin: 0 auto;
     border-radius: 20px;
     padding: 40px;
-    text-align: center;
     background-color: #a0aec0;
 }
-
+.text{
+    text-align: center;
+    margin: 0;
+}
 .box{
     width: 100px;
     height: 100px;
@@ -16,15 +18,20 @@
 }
 
 .input{
-    width: 300px;
+    width: 400px;
     height: 43px;
     margin-top: 5px;
-    align-items: center;
+    border: 1px;
     border-radius: 4px;
+}
+.letra{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 30px;
 }
 
 .ComBox {
-    text-align: center;
     padding: 20px;
 }
 
@@ -33,7 +40,6 @@
     width: 300px;
     background-color: #a0aec0;
     border-radius: 20px;
-    text-align: center;
     padding: 50px;
     margin-left: 20px;
     margin-right: 20px;
@@ -42,4 +48,9 @@
 .cardsAlign {
     display: flex;
     justify-content: center;
+}
+
+.btn{
+    margin-top: 3vh;
+    margin-left: 5%;
 }
