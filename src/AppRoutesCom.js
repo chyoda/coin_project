@@ -7,7 +7,7 @@ import AddCred from "./pages/COM/AddCred";
 import CadProd from "./pages/COM/CadProd";
 import LerQrCode from "./pages/COM/LerQR";
 import CadQrCode from './pages/COM/CadQrCode';
-import CadQrCode from './pages/COM/CadQrCode';
+
 
 const AppRoutesCom = () => {
     return (
