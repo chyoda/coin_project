@@ -7,7 +7,7 @@ import './StyleCOM.css'
 
 const CadProd = () => {
 
-    const [empresas, setEmpresas] = useState([]);
+    const [empresas, setEmpresas] = useState([]);    
     const [nomeProduto, setNomeProduto] = useState("");
     const [valorProduto, setValorProduto] = useState("");
     const [nomeEmpresa, setEmpresaSelecionada] = useState("");
@@ -15,8 +15,9 @@ const CadProd = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        console.log("Código HANDLE SUBMIT executado");
         try {
-            const response = await axios.post("http://localhost:8080/backend/cadastrarProduto.php", {
+            const response = await axios.post("http://localhost:8080/backend/COM/cadastrarProduto.php", {
                 nomeProduto: nomeProduto,
                 valorProduto: valorProduto,
                 nomeEmpresa: nomeEmpresa,
@@ -25,7 +26,6 @@ const CadProd = () => {
                     'Content-Type': 'application/json',
                 },
             });
-            
 
             // Lida com a resposta do servidor aqui, se necessário
             console.log("Resposta do servidor:", response.data);
@@ -33,10 +33,11 @@ const CadProd = () => {
             // Lida com erros de requisição aqui
             console.error("Erro na requisição:", error);
         }
+        console.log("TRY ou CATCH realizado.");
     };
 
     useEffect(() => {
-        axios.get('http://localhost:8080/backend/ListarEmpresaCadProduto.php')
+        axios.get('http://localhost:8080/backend/COM/ListarEmpresaCadProduto.php')
 
             .then(response => {
                 console.log('Resposta do servidor:', response.data);
@@ -88,7 +89,7 @@ const CadProd = () => {
                         >
                         <option>Selecione a empresa.</option>
                         {empresas.map(empresa => (
-                            <option key={empresa.id} value={empresa.id}>
+                            <option key={empresa.id} value={empresa.name}>
                                 {empresa.name}
                             </option>
                         ))}
