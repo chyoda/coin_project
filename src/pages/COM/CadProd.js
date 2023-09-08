@@ -14,8 +14,6 @@ const CadProd = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        console.log("Código HANDLE SUBMIT executado");
         try {
             const response = await axios.post("http://localhost:8080/backend/COM/cadastrarProduto.php", {
                 nomeProduto: nomeProduto,
@@ -27,10 +25,8 @@ const CadProd = () => {
                 },
             });
 
-            // Lida com a resposta do servidor aqui, se necessário
             console.log("Resposta do servidor:", response.data);
         } catch (error) {
-            // Lida com erros de requisição aqui
             console.error("Erro na requisição:", error);
         }
         console.log("TRY ou CATCH realizado.");
@@ -48,6 +44,7 @@ const CadProd = () => {
             });
 
     }, []);
+    
     return (
         <>
             <NavBarCOM />
