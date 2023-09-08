@@ -9,8 +9,7 @@ const LerQR = () => {
             <NavBarCOM/>
             <br/>
             <div className="boxCred">
-                <br/>
-                <h2>Adicionar Crédito</h2>
+                <h2 class='text'>Adicionar Crédito</h2>
                 <br/>
                 <Form>
                     <Form.Group className="mb-3">
