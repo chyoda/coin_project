@@ -1,13 +1,12 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
-import EmptyNavBar from "../components/EmptyNavBar";
+import EmptyNavBar from "../../components/EmptyNavBar";
 import Form from 'react-bootstrap/Form';
-import Footer from '../components/Footer';
-import '../styles/HomeAdm.css';
+import '../../styles/ListMembro.css';
 
 
-const HomeAdm = () => {
+const ListMembro = () => {
   return (
     <>
       <EmptyNavBar />
@@ -36,9 +35,8 @@ const HomeAdm = () => {
           <Button variant="info">Nome: XXXXX<br/>Cargo: XXXXX<br/>Empresa: XXX</Button>{' '}
         </div>
       </div>
-      <Footer />
     </>
   )
 }
 
-export default HomeAdm;
+export default ListMembro;

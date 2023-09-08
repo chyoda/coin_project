@@ -1,10 +1,10 @@
 import React from 'react';
-import EmptyNavBar from '../components/EmptyNavBar';
+import EmptyNavBar from '../../components/EmptyNavBar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import '../styles/modalAdm.css';
+import '../../styles/AddMembro.css';
 
-const modalAdm = () => {
+const AddMembro = () => {
   return (
     <>
       <EmptyNavBar />
@@ -39,4 +39,4 @@ const modalAdm = () => {
   )
 }
 
-export default modalAdm;
+export default AddMembro;
