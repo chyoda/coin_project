@@ -8,8 +8,8 @@ const HomeADM = () => {
         <>
             <EmptyNavBar />
             <h1 class="text">Administrador</h1>
-            <Link to='/AdicionarMembros'>
-                <h2 class="button"><button>Adicionar Membro</button></h2>
+            <Link to='/ListaMembros'>
+                <h2 class="button"><button>Lista de Membro</button></h2>
             </Link>
             <Link to='/ComissaoDashboard'>
                 <h2 class="button1"><button>Página da comissão</button></h2>
