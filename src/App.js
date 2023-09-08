@@ -3,12 +3,13 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; 
 import AppRoutesCom from './AppRoutesCom';
 import Footer from './components/Footer'
+import AppRoutesADM from './AppRoutesADM';
 
 function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        <AppRoutesCom/>
+        <AppRoutesADM/>
         <Footer/>
       </div>
     </BrowserRouter>

@@ -1,13 +1,13 @@
 import React from 'react';
-import EmptyNavBar from '../components/EmptyNavBar';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import '../styles/modalAdm.css';
+import '../../styles/AddMembro.css';
+import NavBarADM from './componentsADM/NavBarADM';
 
-const modalAdm = () => {
+const AddMembro = () => {
   return (
     <>
-      <EmptyNavBar />
+      <NavBarADM />
       <div class="box">
       <Form method='POST'>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -39,4 +39,4 @@ const modalAdm = () => {
   )
 }
 
-export default modalAdm;
+export default AddMembro;
