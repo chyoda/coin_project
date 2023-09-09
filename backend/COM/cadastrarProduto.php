@@ -5,7 +5,7 @@ header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
 require_once '../../library/conector.php';
-require_once '../api_php/verificador.php';
+require_once '../../api_php/verificador.php';
 
 echo "Código PHP executado";
 

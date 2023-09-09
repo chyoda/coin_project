@@ -1,7 +1,5 @@
 <?php
 
-// Esse código é responsavel por entregar o nome do cliente ao LerQr baseando-se no ID 
-
 require_once '../../library/conector.php';
 
 header("Access-Control-Allow-Origin: http://localhost:3000");
