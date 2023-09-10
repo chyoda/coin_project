@@ -8,7 +8,7 @@ import CadProd from "./pages/COM/CadProd";
 import LerQrCode from "./pages/COM/LerQR";
 import CadQrCode from './pages/COM/CadQrCode';
 
-const AppRoutesCom = () => {
+const AppRoutesCOM = () => {
     return (
         <Routes>
             <Route path="/" element={<HomeCom />} />
@@ -23,4 +23,4 @@ const AppRoutesCom = () => {
     );
 };
 
-export default AppRoutesCom;
+export default AppRoutesCOM;

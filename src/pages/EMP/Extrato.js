@@ -1,14 +1,11 @@
 import React from "react";
-import EmptyNavBar from "../../components/EmptyNavBar";
 import '../../styles/Extrato.css'
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import NavBarEMP from "./componentsEMP/NavBarEMP";
 
 const Extrato = () => {
     return(
         <div>
-            <EmptyNavBar />
+            <NavBarEMP/>
             <h1 class='text'>Extrato da empresa</h1>
             <div class="container">
                 <div class="esquerda">

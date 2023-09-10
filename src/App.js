@@ -1,15 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom'; 
-import AppRoutesCom from './AppRoutesCom';
 import Footer from './components/Footer'
-import AppRoutesADM from './AppRoutesADM';
+import AppRoutesEMP from './Routes/AppRoutesEMP'
 
 function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        <AppRoutesADM/>
+        <AppRoutesEMP/>
         <Footer/>
       </div>
     </BrowserRouter>

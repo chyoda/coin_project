@@ -1,13 +1,12 @@
 import React from "react";
-import EmptyNavBar from "../../components/EmptyNavBar";
 import "../../styles/EnvComp.css";
 import Form from 'react-bootstrap/Form';
-
+import NavbarEMP from './componentsEMP/NavBarEMP'
 
 const EnvComp = () => {
     return (
         <>
-            <EmptyNavBar />
+            <NavbarEMP/>
             <h1 class="text">Enviar Comprovante</h1>
 
             <div class='td'>

@@ -1,8 +1,9 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import EmptyNavBar from "../components/EmptyNavBar";
-import appLogo from  '../images/appLogo.png'
-import '../styles/HomeEmp.css'
+import EmptyNavBar from "../../components/EmptyNavBar";
+import appLogo from '../../images/appLogo.png'
+import '../../styles/HomeEmp.css'
+import { Link } from "react-router-dom";
 
 const HomeEmp = () => {
     return (
@@ -32,16 +33,24 @@ const HomeEmp = () => {
                         <hr/>
                         <hr/>
                     </div>
-                    <Button variant="primary">Vender</Button>{' '}
+                    <Link to='/Vender'>
+                        <Button variant="primary">Vender</Button>{' '}
+                    </Link>
                     <br/>
                     <br/>
-                    <Button variant="primary">Verificar saldo do cliente</Button>{' '}
+                    <Link to='/Vender_LerQRCode'>
+                        <Button variant="primary">Verificar saldo do cliente</Button>{' '}
+                    </Link>
                     <br/>
                     <br/>
-                    <Button variant="primary">Extrato</Button>{' '}
+                    <Link to='/Extrato'>
+                        <Button variant="primary">Extrato</Button>{' '}
+                    </Link>
                     <br/>
                     <br/>
-                    <Button variant="primary">Enviar comprovante de compra</Button>{' '}
+                    <Link to='/EnviarComprovante'>
+                        <Button variant="primary">Enviar comprovante de compra</Button>{' '}
+                    </Link>
                 </div>
             </div>
         </>

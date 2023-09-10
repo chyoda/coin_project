@@ -1,16 +1,16 @@
 import React from "react";
-import EmptyNavBar from "../../components/EmptyNavBar";
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
-import './styles/vender.css'
+import '../../styles/vender.css'
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import NavBarEMP from "./componentsEMP/NavBarEMP";
 
 
 const Vender = () => {
     return (
         <>
-            <EmptyNavBar/>
+            <NavBarEMP/>
             <div class="ComBox">
                 <h1>Realizar Venda</h1>
             </div>
