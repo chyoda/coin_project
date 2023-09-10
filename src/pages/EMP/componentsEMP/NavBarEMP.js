@@ -10,7 +10,7 @@ const NavBarEMP = () => {
         <>
         <Navbar bg="dark" data-bs-theme="dark">
             <Container>
-            <Navbar.Brand as={Link} to="/EmpresaDashboard">
+            <Navbar.Brand as={Link} to="/">
             <img
                 alt=""
                 src={appLogo}
@@ -21,7 +21,7 @@ const NavBarEMP = () => {
             VTC Bank
             </Navbar.Brand>
             <Nav className="me-auto">
-                <Nav.Link as={Link} to="/EmpresaDashboard">Home</Nav.Link>
+                <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/Vender">QR Code</Nav.Link>
                 <Nav.Link as={Link} to="/Vender_LerQRCode">Saldo do cliente</Nav.Link>
                 <Nav.Link as={Link} to="/Extrato">Extrato</Nav.Link>
