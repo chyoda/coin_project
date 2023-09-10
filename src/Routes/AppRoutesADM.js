@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomeADM from "./pages/ADM/HomeADM";
-import ListMembro from "./pages/ADM/ListMembro";
-import AddMembro from "./pages/ADM/AddMembro";
-import HomeCom from "./pages/COM/HomeCom";
+import HomeADM from "../pages/ADM/HomeADM";
+import ListMembro from "../pages/ADM/ListMembro";
+import AddMembro from "../pages/ADM/AddMembro";
+import HomeCom from "../pages/COM/HomeCom";
 
 const AppRoutesADM = () => {
     return (

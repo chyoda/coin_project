@@ -1,12 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import HomeCom from "./pages/COM/HomeCom";
-import MonEmp from "./pages/COM/MonEmp";
-import AddEmp from "./pages/COM/AddEmp";
-import AddCred from "./pages/COM/AddCred";
-import CadProd from "./pages/COM/CadProd";
-import LerQrCode from "./pages/COM/LerQR";
-import CadQrCode from './pages/COM/CadQrCode';
+import HomeCom from "../pages/COM/HomeCom";
+import MonEmp from "../pages/COM/MonEmp";
+import AddEmp from "../pages/COM/AddEmp";
+import AddCred from "../pages/COM/AddCred";
+import CadProd from "../pages/COM/CadProd";
+import LerQrCode from "../pages/COM/LerQR";
+import CadQrCode from '../pages/COM/CadQrCode';
 
 const AppRoutesCOM = () => {
     return (

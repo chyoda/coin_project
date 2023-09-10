@@ -9,7 +9,7 @@ import Vender from "../pages/EMP/Vender"
 const AppRoutesEMP = () => {
     return (
         <Routes>
-            <Route path="/EmpresaDashboard" element={<HomeEmp />} />
+            <Route path="/" element={<HomeEmp />} />
             <Route path="/Extrato" element={<Extrato />} />
             <Route path="/EnviarComprovante" element={<EnvComp />} />
             <Route path="/Vender" element={<Vender />} />
