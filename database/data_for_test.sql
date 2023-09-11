@@ -15,7 +15,7 @@ VALUES
   (9,"Arcu Vel Quam Industries","0612.35","magna a neque. Nullam ut nisi a odio semper cursus."),
   (10,"In Felis LLC","3172.25","Integer sem elit, pharetra ut, pharetra sed, hendrerit a, arcu.");
   
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("9C39B63B-824A-E1FD-F6F7-B231E3BBF765","Louis Edwards","42.71","1987-6-13"),
   ("3A95FD48-8C37-A7E1-5B27-7B1C4DA081C4","Connor Miles","01.89","1995-10-30"),
@@ -27,7 +27,7 @@ VALUES
   ("789635B2-F1BC-0A81-A615-D7B2C8A9F752","May Lindsay","10.58","1987-12-18"),
   ("99AD4E4C-E290-70F0-503A-27A7986C7EF7","Gwendolyn Contreras","28.22","2007-10-11"),
   ("BB29A216-D358-3761-CE1E-1C2D3F566EB4","Nevada Bishop","05.23","1998-3-9");
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("43668DC1-A4F6-5B6C-5A34-C0554E73A07F","Amity Gentry","05.54","1997-4-1"),
   ("8A4642BA-6F9D-B445-5A9F-46EC392AC971","Reece Rodriguez","21.62","2014-9-23"),
@@ -40,7 +40,7 @@ VALUES
   ("C459A933-E1B8-B0DE-3A7C-EBDD849059CC","Dalton Rodriquez","01.83","1990-12-24"),
   ("045E1194-82C4-354D-463E-30C9279E970B","Quintessa Casey","97.61","2016-4-28");
   
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("C39352CE-89B5-E883-457A-22DDDE78CEDB","Clinton Moss","33.43","2018-10-24"),
   ("C81DB5B5-153B-6FD5-E2F9-885E316172B1","Alyssa Mann","02.05","2009-4-30"),
@@ -52,7 +52,7 @@ VALUES
   ("E180BA65-A241-D26E-752E-D37493F4CCE8","Hunter Russell","06.56","2010-8-10"),
   ("3C59D972-E6ED-823E-4E47-52A28BD0667A","Joseph Sykes","09.14","2018-8-1"),
   ("CD3172A5-B76E-844E-91FD-8830A6DCE722","Myra Mclaughlin","56.57","2021-7-14");
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("58DB8D5E-6534-248C-68B9-C297661FFE99","Hayden Manning","59.25","2018-9-13"),
   ("C6E031B3-DE31-D14A-DF8B-DED475CDCB80","Lacey Carroll","06.71","2021-3-22"),
@@ -65,7 +65,7 @@ VALUES
   ("7EAAE2EE-5B09-8FA3-DFD9-4453BD54E15D","Colorado Noble","20.36","2013-10-31"),
   ("09EA8AD9-009E-99DD-1A76-0774EF28AAD6","Nolan Savage","13.49","2021-12-8");
   
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("CBEF3993-4D12-5CE7-8DD8-1E4B031EA445","Nita Black","44.97","1999-2-18"),
   ("28DEC080-62C8-DDB1-E488-1E83418477C5","Ashely Erickson","15.45","2019-2-8"),
@@ -77,7 +77,7 @@ VALUES
   ("82C551B5-8E89-CE46-6AE2-7EB4C11E3C65","Price Jarvis","05.54","2022-7-11"),
   ("E8BD6AA4-C99B-7509-33C4-0D239ABF4128","Lynn Vargas","27.03","1999-7-31"),
   ("9196AD99-D2C3-54CF-0A19-13006AA2E682","Norman Brown","93.82","1987-3-28");
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("18BF252C-C53C-D9AC-3D18-7D1E3A308189","Erica Alvarez","19.36","2014-9-29"),
   ("581D6D0E-DCCB-C725-3C52-30EEB32AC633","Maisie Parrish","85.83","1995-6-5"),
@@ -90,7 +90,7 @@ VALUES
   ("2F204BAB-BAF2-E383-8957-8E316BA59935","Chava Thomas","03.81","1989-3-21"),
   ("CA8B2175-B2E1-6848-E682-E16C6A46EF9A","Jasper Bullock","51.47","1989-7-19");
   
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("785D2458-D0CC-A6A8-5C7D-086684E5249E","Wyoming Hernandez","04.47","2016-7-5"),
   ("888FB201-6742-42E3-5391-6CEE21A91692","Sasha Pope","48.87","1998-3-16"),
@@ -102,7 +102,7 @@ VALUES
   ("DE5A41B6-5CB9-EB7C-BC5C-DBC949398657","Orla Herman","06.40","1992-4-25"),
   ("9704E2E8-3CE1-0F07-1E2D-FD85D7D2285B","Briar Moon","76.13","2016-1-27"),
   ("68F8D7D2-7410-7584-6DA5-E8AF8BCA874C","Jocelyn Ware","08.85","2022-2-4");
-INSERT INTO `client` (`guid`,`name`,`wallet`,`date`)
+INSERT INTO `client` (`guid`,`name`,`wallet`,`birth_date`)
 VALUES
   ("21876AA3-E7E2-A126-BF96-AE2D6205A686","Valentine Galloway","05.23","1988-11-21"),
   ("661DC09C-FAC7-1471-1E84-72B39FDB4B12","Whitney Ratliff","36.30","1981-6-9"),
