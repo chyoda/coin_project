@@ -46,7 +46,7 @@ const AddCred = () => {
             <NavBarCOM />
             <br />
             <div className="boxCred">
-                <h2 className='text'>Adicionar Crédito</h2>
+                <h2 className="text">Adicionar Crédito</h2>
                 <br />
                 <Form>
                     <Form.Group className="mb-3">
@@ -60,7 +60,7 @@ const AddCred = () => {
                         </input>
                     </Form.Group>
                     <Button>Ou leia o Qr code</Button>
-                    <div className="box"></div>
+                    <div className="caixa"></div>
                     <br />
                     {clienteLocalizado ? (
                         <Link to={{

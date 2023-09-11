@@ -1,45 +1,13 @@
+@import url(../../styles/App.css);
+
 .boxCred {
-    width: 500px;
+    width: 35vw;
     margin: 0 auto;
-    border-radius: 20px;
-    padding: 40px;
-    background-color: #a0aec0;
-}
-.text{
-    text-align: center;
-    margin: 0;
-}
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    margin-top: 3vh;
-    margin-left: 25vh;
+    border-radius: 5px;
+    padding: 2.5rem;
+    background-color: var(--gray-100);
 }
 
-.input{
-    width: 400px;
-    height: 43px;
-    margin-top: 5px;
-    border: 1px;
-    border-radius: 4px;
-}
+/* AddCred */
 
-.ComBox {
-    padding: 20px;
-}
 
-.cardBox {
-    height: 350px;
-    width: 300px;
-    background-color: #a0aec0;
-    border-radius: 20px;
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.cardsAlign {
-    display: flex;
-    justify-content: center;
-}
