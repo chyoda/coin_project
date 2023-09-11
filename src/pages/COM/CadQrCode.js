@@ -10,7 +10,7 @@ const CadQrCode = () => {
         <br></br>
             <div>
                 <div className='boxCred'>
-                    <h2 className='texto'>Cadastrar Cliente</h2>
+                    <h2 className='text'>Cadastrar Cliente</h2>
                     <br></br>
                     <label>Nome:</label>
                     <br></br>
