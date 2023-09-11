@@ -1,45 +1,27 @@
 .boxCred {
-    width: 500px;
+    width: 35vw;
     margin: 0 auto;
-    border-radius: 20px;
-    padding: 40px;
+    border-radius: 5px;
+    padding: 2.5rem;
     background-color: #a0aec0;
 }
-.text{
-    text-align: center;
-    margin: 0;
-}
-.box{
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    margin-top: 3vh;
-    margin-left: 25vh;
-}
+
+/* CadCliente */
 
 .input{
-    width: 400px;
-    height: 43px;
-    margin-top: 5px;
-    border: 1px;
-    border-radius: 4px;
+    border-radius: 3px;
+    width: 25vw;
+    border: none;
+    height: 6vh;
 }
 
-.ComBox {
-    padding: 20px;
+.caixa{
+    margin: 0 auto;
+    width: 10vw;
+    height: 20vh;
+    background-color: black;
 }
 
-.cardBox {
-    height: 350px;
-    width: 300px;
-    background-color: #a0aec0;
-    border-radius: 20px;
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.cardsAlign {
-    display: flex;
-    justify-content: center;
+.texto{
+    text-align: center;
 }
