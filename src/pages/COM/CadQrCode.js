@@ -10,7 +10,8 @@ const CadQrCode = () => {
         <br></br>
             <div>
                 <div className='boxCred'>
-                    <h2 className='text'>Cadastrar Cliente</h2>
+                    <h2 className='texto'>Cadastrar Cliente</h2>
+                    <br></br>
                     <label>Nome:</label>
                     <br></br>
                     <input placeholder="Digite o nome do cliente" className='input'></input>
@@ -21,8 +22,11 @@ const CadQrCode = () => {
                     <br></br>
                     <br></br>
                     <Button variant="primary" type="submit" className="btn">Ou Leia o QR Code para salvar o cliente.</Button>
-                        <div className="box">
+                    <br></br>
+                    <br></br>
+                        <div className="caixa">
                         </div>
+                    <br></br>
                     <Button variant="primary" type="submit" className="btn">
                                 Concluir
                     </Button>
