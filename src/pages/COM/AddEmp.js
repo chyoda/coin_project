@@ -24,8 +24,7 @@
                         'Content-Type': 'application/json',
                     },
                 });
-                
-
+    
                 // Lida com a resposta do servidor aqui, se necessário
                 console.log("Resposta do servidor:", response.data);
             } catch (error) {
@@ -40,32 +39,37 @@
                 <br />
                 <Form className='boxCred' onSubmit={handleSubmit}>
 
-                    <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label>Nome da empresa:*</Form.Label>
+                    <Form.Group controlId="formBasicText">
+                        <Form.Label>Nome da empresa:</Form.Label>
+                        <br></br>
                         <Form.Control
                             type="text"
+                            className="input"
                             maxLength={30}
                             placeholder="Digite o nome da empresa."
                             value={nomeEmpresa}
                             onChange={(e) => setNomeEmpresa(e.target.value)}
                         />
                     </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicText">
-                        <Form.Label>Descrição:*</Form.Label>
+                    <br></br>
+                    <Form.Group controlId="formBasicText">
+                        <Form.Label>Descrição:</Form.Label>
+                        <br></br>
                         <Form.Control
                             type="text"
+                            className="input"
                             maxLength={70}
                             placeholder="Digite a descrição da empresa."
                             value={descricaoEmpresa}
                             onChange={(e) => setDescricaoEmpresa(e.target.value)}
                         />
                     </Form.Group>
-
-                    <Form.Group className="mb-3" controlId="formBasicNumber">
+                    <br></br>
+                    <Form.Group controlId="formBasicNumber">
                         <Form.Label>Saldo*:</Form.Label>
                         <Form.Control
                             type="number"
+                            className="input"
                             max={99999999.99}
                             step="0.01"
                             placeholder="Digite o saldo da empresa."
@@ -73,8 +77,7 @@
                             onChange={(e) => setSaldoEmpresa(e.target.value)}
                         />
                     </Form.Group>
-
-                    <br />
+                    <br></br>
                     <Button variant="primary" type="submit">
                         Concluir
                     </Button>
